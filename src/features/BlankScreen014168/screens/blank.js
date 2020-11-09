@@ -110,6 +110,34 @@ const styles = StyleSheet.create({
     lineHeight: 30,
     letterSpacing: 14
   },
+
+  View_1: {},
+  Text_2: {
+    textAlign: "center",
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase",
+    lineHeight: 22,
+    letterSpacing: 6
+  },
+
+  CheckBox_3: {
+    textDecorationLine: "overline",
+    textTransform: "uppercase",
+    lineHeight: 23,
+    letterSpacing: 14
+  },
+
+  CheckBox_5: {
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase",
+    lineHeight: 30,
+    letterSpacing: 14
+  },
+
+  TextInput_6: {
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase"
+  },
   View_1: {},
   Text_2: {
     textAlign: "center",
@@ -119,7 +147,7 @@ const styles = StyleSheet.create({
     letterSpacing: 6
   },
   CheckBox_3: {
-    textDecorationLine: "overline",
+    textDecorationLine: "underline overline",
     textTransform: "uppercase",
     lineHeight: 23,
     letterSpacing: 14
