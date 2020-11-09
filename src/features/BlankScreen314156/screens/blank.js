@@ -31,7 +31,6 @@ export default class Blank extends React.Component {
       <Button title="Press me!" onPress={() => alert("Pressed!")} />
       <TextInput
         placeholder="Number Input Placeholder"
-        keyboardType="numeric"
         value={this.state.TextInput_4}
         onChangeText={nextValue => this.setState({ TextInput_4: nextValue })}
       />
@@ -70,6 +69,11 @@ const styles = StyleSheet.create({
   CheckBox_8: {},
   Icon_9: {},
   View_1: {},
+  View_1: {},
+  Text_2: {},
+  Button_3: {},
+  TextInput_4: {},
+  TextInput_5: {},
   View_1: {},
   Text_2: {},
   Button_3: {},
