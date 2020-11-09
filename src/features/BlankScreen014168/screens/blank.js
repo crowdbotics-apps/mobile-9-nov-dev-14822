@@ -27,17 +27,16 @@ export default class Blank extends React.Component {
 
   render = () => (
     <View>
-      <Text>Sample text content</Text>
+      <Text style={styles.Text_2}>Sample text content</Text>
       <CheckBox
         title="Checkbox"
+        containerStyle={styles.CheckBox_3}
         checked={this.state.CheckBox_3}
         onPress={nextChecked => this.setState({ CheckBox_3: nextChecked })}
       />
-      <Icon name="star" />
       <CheckBox
         title="Radio button"
-        checkedIcon="dot-circle-o"
-        uncheckedIcon="circle-o"
+        containerStyle={styles.CheckBox_5}
         checked={this.state.CheckBox_5}
         onPress={nextChecked => this.setState({ CheckBox_5: nextChecked })}
       />
@@ -82,5 +81,25 @@ const styles = StyleSheet.create({
   Text_2: {},
   CheckBox_3: {},
   Icon_4: {},
-  CheckBox_5: {}
+  CheckBox_5: {},
+  View_1: {},
+  Text_2: {
+    textAlign: "center",
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase",
+    lineHeight: 22,
+    letterSpacing: 6
+  },
+  CheckBox_3: {
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase",
+    lineHeight: 23,
+    letterSpacing: 14
+  },
+  CheckBox_5: {
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase",
+    lineHeight: 30,
+    letterSpacing: 14
+  }
 })
