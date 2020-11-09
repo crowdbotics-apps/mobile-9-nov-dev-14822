@@ -23,7 +23,13 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { CheckBox_3: true, CheckBox_5: true, TextInput_6: "" }
+  state = {
+    CheckBox_3: true,
+    CheckBox_5: true,
+    TextInput_6: "",
+    CheckBox_8: true,
+    CheckBox_9: true
+  }
 
   render = () => (
     <View>
@@ -45,6 +51,19 @@ export default class Blank extends React.Component {
         style={styles.TextInput_6}
         value={this.state.TextInput_6}
         onChangeText={nextValue => this.setState({ TextInput_6: nextValue })}
+      />
+      <Text style={styles.Text_7}>Sample text content</Text>
+      <CheckBox
+        title="Checkbox"
+        containerStyle={styles.CheckBox_8}
+        checked={this.state.CheckBox_8}
+        onPress={nextChecked => this.setState({ CheckBox_8: nextChecked })}
+      />
+      <CheckBox
+        title="Radio button"
+        containerStyle={styles.CheckBox_9}
+        checked={this.state.CheckBox_9}
+        onPress={nextChecked => this.setState({ CheckBox_9: nextChecked })}
       />
     </View>
   )
@@ -138,6 +157,34 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline overline",
     textTransform: "uppercase"
   },
+
+  View_1: {},
+  Text_2: {
+    textAlign: "center",
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase",
+    lineHeight: 22,
+    letterSpacing: 6
+  },
+
+  CheckBox_3: {
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase",
+    lineHeight: 23,
+    letterSpacing: 14
+  },
+
+  CheckBox_5: {
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase",
+    lineHeight: 30,
+    letterSpacing: 14
+  },
+
+  TextInput_6: {
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase"
+  },
   View_1: {},
   Text_2: {
     textAlign: "center",
@@ -161,5 +208,24 @@ const styles = StyleSheet.create({
   TextInput_6: {
     textDecorationLine: "underline overline",
     textTransform: "uppercase"
+  },
+  Text_7: {
+    textAlign: "center",
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase",
+    lineHeight: 22,
+    letterSpacing: 6
+  },
+  CheckBox_8: {
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase",
+    lineHeight: 23,
+    letterSpacing: 14
+  },
+  CheckBox_9: {
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase",
+    lineHeight: 30,
+    letterSpacing: 14
   }
 })
