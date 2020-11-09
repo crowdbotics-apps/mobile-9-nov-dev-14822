@@ -41,22 +41,18 @@ export default class Blank extends React.Component {
         onChangeText={nextValue => this.setState({ TextInput_4: nextValue })}
       />
       <DateTimePicker
-        showIcon={false}
         date={this.state.DateTimePicker_5}
         onDateChange={selectedDate =>
           this.setState({ DateTimePicker_5: selectedDate })
         }
       />
       <Switch
-        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
         style={styles.Switch_6}
         value={this.state.Switch_6}
         onValueChange={nextChecked => this.setState({ Switch_6: nextChecked })}
       />
       <CheckBox
         title="Radio button"
-        checkedIcon="dot-circle-o"
-        uncheckedIcon="circle-o"
         checked={this.state.CheckBox_7}
         onPress={nextChecked => this.setState({ CheckBox_7: nextChecked })}
       />
@@ -66,6 +62,7 @@ export default class Blank extends React.Component {
         checked={this.state.CheckBox_9}
         onPress={nextChecked => this.setState({ CheckBox_9: nextChecked })}
       />
+      <Text>Sample text content</Text>
     </View>
   )
 }
@@ -75,6 +72,7 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
   Text_2: {},
   Button_3: {},
@@ -83,5 +81,15 @@ const styles = StyleSheet.create({
   Switch_6: { alignSelf: "flex-start" },
   CheckBox_7: {},
   Icon_8: {},
-  CheckBox_9: {}
+  CheckBox_9: {},
+  View_1: {},
+  Text_2: {},
+  Button_3: {},
+  TextInput_4: {},
+  DateTimePicker_5: {},
+  Switch_6: { alignSelf: "flex-start" },
+  CheckBox_7: {},
+  Icon_8: {},
+  CheckBox_9: {},
+  Text_10: {}
 })
