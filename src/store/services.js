@@ -1,4 +1,9 @@
 import axios from "axios"
+const plugin = axios.create({
+  baseURL:
+    "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/7307/storyboard/8491/",
+  headers: { Accept: "application/json", "Content-Type": "application/json" }
+})
 const mobilenovAPI = axios.create({
   baseURL: "https://mobile-9-nov-dev-14822-prod.herokuapp.com/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
