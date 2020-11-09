@@ -29,8 +29,7 @@ export default class Blank extends React.Component {
     Switch_6: true,
     CheckBox_7: true,
     CheckBox_9: true,
-    CheckBox_11: true,
-    CheckBox_12: true
+    CheckBox_11: true
   }
 
   render = () => (
@@ -42,22 +41,18 @@ export default class Blank extends React.Component {
         onChangeText={nextValue => this.setState({ TextInput_4: nextValue })}
       />
       <DateTimePicker
-        showIcon={false}
         date={this.state.DateTimePicker_5}
         onDateChange={selectedDate =>
           this.setState({ DateTimePicker_5: selectedDate })
         }
       />
       <Switch
-        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
         style={styles.Switch_6}
         value={this.state.Switch_6}
         onValueChange={nextChecked => this.setState({ Switch_6: nextChecked })}
       />
       <CheckBox
         title="Radio button"
-        checkedIcon="dot-circle-o"
-        uncheckedIcon="circle-o"
         checked={this.state.CheckBox_7}
         onPress={nextChecked => this.setState({ CheckBox_7: nextChecked })}
       />
@@ -70,13 +65,10 @@ export default class Blank extends React.Component {
       <Text>Sample text content</Text>
       <CheckBox
         title="Radio button"
+        checkedIcon="dot-circle-o"
+        uncheckedIcon="circle-o"
         checked={this.state.CheckBox_11}
         onPress={nextChecked => this.setState({ CheckBox_11: nextChecked })}
-      />
-      <CheckBox
-        title="Checkbox"
-        checked={this.state.CheckBox_12}
-        onPress={nextChecked => this.setState({ CheckBox_12: nextChecked })}
       />
     </View>
   )
@@ -117,5 +109,15 @@ const styles = StyleSheet.create({
   CheckBox_9: {},
   Text_10: {},
   CheckBox_11: {},
-  CheckBox_12: {}
+  CheckBox_12: {},
+  View_1: {},
+  Text_2: {},
+  TextInput_4: {},
+  DateTimePicker_5: {},
+  Switch_6: { alignSelf: "flex-start" },
+  CheckBox_7: {},
+  Icon_8: {},
+  CheckBox_9: {},
+  Text_10: {},
+  CheckBox_11: {}
 })
