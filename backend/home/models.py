@@ -10,6 +10,17 @@ class CustomText(models.Model):
     title = models.CharField(
         max_length=150,
     )
+    htfghfhgfghf = models.PositiveSmallIntegerField(
+        null=True,
+        blank=True,
+    )
+    hfhgfhgfhgf = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="customtext_hfhgfhgfhgf",
+    )
 
     def __str__(self):
         return self.title
