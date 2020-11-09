@@ -23,7 +23,7 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { CheckBox_3: true, CheckBox_5: true }
+  state = { CheckBox_3: true, CheckBox_5: true, TextInput_6: "" }
 
   render = () => (
     <View>
@@ -39,6 +39,12 @@ export default class Blank extends React.Component {
         containerStyle={styles.CheckBox_5}
         checked={this.state.CheckBox_5}
         onPress={nextChecked => this.setState({ CheckBox_5: nextChecked })}
+      />
+      <TextInput
+        placeholder="Sample text input placeholder"
+        style={styles.TextInput_6}
+        value={this.state.TextInput_6}
+        onChangeText={nextValue => this.setState({ TextInput_6: nextValue })}
       />
     </View>
   )
@@ -90,8 +96,30 @@ const styles = StyleSheet.create({
     lineHeight: 22,
     letterSpacing: 6
   },
+
   CheckBox_3: {
     textDecorationLine: "underline overline",
+    textTransform: "uppercase",
+    lineHeight: 23,
+    letterSpacing: 14
+  },
+
+  CheckBox_5: {
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase",
+    lineHeight: 30,
+    letterSpacing: 14
+  },
+  View_1: {},
+  Text_2: {
+    textAlign: "center",
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase",
+    lineHeight: 22,
+    letterSpacing: 6
+  },
+  CheckBox_3: {
+    textDecorationLine: "overline",
     textTransform: "uppercase",
     lineHeight: 23,
     letterSpacing: 14
@@ -101,5 +129,9 @@ const styles = StyleSheet.create({
     textTransform: "uppercase",
     lineHeight: 30,
     letterSpacing: 14
+  },
+  TextInput_6: {
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase"
   }
 })
